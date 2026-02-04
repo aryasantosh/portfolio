@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Kulkarni | iOS Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&family=Allura:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-gradient"></div>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Resume Modal -->
+    <div class="resume-modal" id="resumeModal">
+        <div class="resume-modal-content">
+            <button class="resume-close" id="resumeClose">&times;</button>
+            <div class="resume-header">
+                <h2>Arya Kulkarni</h2>
+                <div class="resume-contact-info">
+                    <span><i class="fas fa-phone"></i> +91-8080243329</span>
+                    <span><i class="fas fa-envelope"></i> aryakulkarni33@gmail.com</span>
+                    <a href="https://www.linkedin.com/in/aarya-kulkarni-88593b275" target="_blank" style="color: white; text-decoration: none;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="resume-body">
+                <div class="resume-section">
+                    <h3><i class="fas fa-user"></i> Professional Summary</h3>
+                    <p>Aspiring iOS developer with hands-on internship experience at MediBuddy, where I contributed to building scalable mobile features using Swift, UIKit, RxSwift, and Firebase. Proficient in MVVM architecture, REST API integration, and agile development practices. Also experienced in Android and web development, with a passion for creating optimized, user-first applications.</p>
+                </div>
+                
+                <div class="resume-section">
+                    <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <strong>iOS App Developer Intern - MediBuddy, Bengaluru</strong>
+                            <span>Jun 2025 – Jul 2025</span>
+                        </div>
+                        <ul>
+                            <li>Implemented universal tab navigation using UIKit and RxSwift for 10,000+ users</li>
+                            <li>Increased user engagement by 15% with UICollectionView carousel banners</li>
+                            <li>Decreased view-controller redundancy by 40% using reusable components</li>
+                            <li>Optimized "Download Invoice" process, saving 30 seconds per session</li>
+                            <li>Configured Snowplow Analytics for user behavior insights</li>
+                        </ul>
+                        <p><strong>Tools:</strong> Xcode, Git, Interface Builder | <strong>Core:</strong> UIKit, RxSwift, MVVM</p>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <strong>Android App Developer - Eduskills (Remote)</strong>
+                            <span>Apr 2024 – Jun 2024</span>
+                        </div>
+                        <ul>
+                            <li>Reduced application faults by 30% with Firebase Debugging</li>
+                            <li>Improved app load time by 15% with optimization</li>
+                            <li>Developed 10+ reusable UI components</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <strong>Front End Developer - Techspeak IT Solutions (Remote)</strong>
+                            <span>Aug 2023 – Sep 2023</span>
+                        </div>
+                        <ul>
+                            <li>Built responsive UI improving UX by 25%</li>
+                            <li>Enhanced collaboration by 30% using Git</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <strong>B.Tech in Computer Science and IT</strong>
+                            <span>CGPA: 9.13</span>
+                        </div>
+                        <p>Rajarambapu Institute of Technology, Rajaramnagar | July 2025</p>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <strong>Diploma in Civil Engineering</strong>
+                            <span>89.53%</span>
+                        </div>
+                        <p>Walchand College of Engineering | June 2022</p>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h3><i class="fas fa-project-diagram"></i> Key Projects</h3>
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <strong>MCP Server - AI Agent Integration Platform</strong>
+                            <span>Python, Swift, JSON-RPC 2.0</span>
+                        </div>
+                        <ul>
+                            <li>Built custom Model Context Protocol server enabling AI agents to interact with local dev environments</li>
+                            <li>Implemented JSON-RPC 2.0 protocol with 13 extensible tools for file ops, shell commands, git integration</li>
+                            <li>Designed secure permission model with auto-approval for safe operations</li>
+                            <li>Created cross-platform Swift client using async/await and Process IPC</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                    <div class="resume-skills">
+                        <span>Swift</span><span>Java</span><span>Kotlin</span><span>JavaScript</span><span>C/C++</span><span>SQL</span><span>Python</span>
+                        <span>UIKit</span><span>SwiftUI</span><span>Android SDK</span><span>Firebase</span><span>Git</span>
+                        <span>MVVM</span><span>MVC</span><span>REST API</span><span>JSON-RPC</span><span>MCP Protocol</span><span>Agile/Scrum</span><span>Unit Testing</span>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <ul class="resume-certs">
+                        <li>Android Developer Virtual Internship - Eduskills</li>
+                        <li>Java from Beginner to Expert - Infosys Springboard</li>
+                        <li>Web Development - Techspeak</li>
+                        <li>iOS Development - MediBuddy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-footer">
+                <button class="btn btn-primary" onclick="window.print()">
+                    <span>Print Resume</span>
+                    <i class="fas fa-print"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <div class="logo-badge">A</div>
+            <span class="logo-text">Arya</span>
+            <span class="logo-divider">|</span>
+            <span class="logo-role" id="navRole">iOS Developer</span>
+            <span class="logo-cursor">|</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting animate-text">Hello, I'm</p>
+                <h1 class="name animate-text">
+                    <span class="first-name">Arya</span>
+                    <span class="last-name">Kulkarni</span>
+                </h1>
+                <div class="typing-container">
+                    <span class="static-text">I'm a </span>
+                    <span class="dynamic-text"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="tagline animate-text">iOS Developer with 1 year building mobile apps using Swift, SwiftUI, and UIKit. Currently learning AI/ML to create smarter iOS applications. Experienced in SDK integration, real-time features, and push notifications—passionate about combining mobile development with AI technologies.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn btn-secondary" id="resumeBtn">
+                        <span>View Resume</span>
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:aryakulkarni33@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+918080243329" class="social-link" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aarya-kulkarni-88593b275" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/aryakulkarni" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="image-glow"></div>
+                    <div class="image-border"></div>
+                    <img src="profile.jpg" alt="Arya Kulkarni" class="profile-img">
+                    <div class="floating-icons">
+                        <div class="float-icon swift"><i class="fab fa-swift"></i></div>
+                        <div class="float-icon android"><i class="fab fa-android"></i></div>
+                        <div class="float-icon apple"><i class="fab fa-apple"></i></div>
+                        <div class="float-icon code"><i class="fas fa-code"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <p class="section-subtitle">Get To Know</p>
+                <h2 class="section-heading">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-img-container">
+                        <img src="profile.jpg" alt="Arya Kulkarni">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm an <span class="highlight">aspiring iOS developer</span> with hands-on internship experience at 
+                        <span class="highlight">MediBuddy</span>, where I contributed to building scalable mobile features 
+                        using <span class="highlight">Swift, UIKit, RxSwift, and Firebase</span>.
+                    </p>
+                    <p class="about-description">
+                        Proficient in <span class="highlight">MVVM architecture</span>, REST API integration, and agile 
+                        development practices. Also experienced in Android and web development, with a passion for 
+                        creating optimized, user-first applications.
+                    </p>
+                    <p class="about-description">
+                        Currently pursuing <span class="highlight">B.Tech in Computer Science</span> at Rajarambapu 
+                        Institute of Technology with a CGPA of <span class="highlight">9.13</span>.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Internships</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="7">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="9.13">0</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="4">0</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-title">
+                <p class="section-subtitle">WHAT I HAVE DONE SO FAR</p>
+                <h2 class="section-heading">Work Experience.</h2>
+            </div>
+            
+            <div class="timeline">
+                <!-- MediBuddy -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">
+                        <span class="timeline-date-text">Jun 2025 – Jul 2025</span>
+                        <div class="timeline-marker"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="exp-card-header">
+                            <div class="exp-header-left">
+                                <h3 class="exp-role">iOS App Developer Intern</h3>
+                                <p class="exp-company"><i class="fas fa-building"></i> MediBuddy, Bengaluru</p>
+                            </div>
+                        </div>
+                        <div class="exp-card-body">
+                            <ul class="exp-points">
+                                <li>Implemented universal tab navigation using UIKit and RxSwift, enhancing flows for 10,000+ users.</li>
+                                <li>Incorporated UICollectionView carousel banners, increasing user engagement by 15%.</li>
+                                <li>Decreased view-controller redundancy by 40% using a reusable universal page controller.</li>
+                                <li>Created a custom permission handler, improving permission grant rate by 25%.</li>
+                                <li>Optimized the "Download Invoice" process, saving 30 seconds per session.</li>
+                                <li>Set up deep linking for 3 key flows to ensure seamless external navigation.</li>
+                                <li>Boosted feature discoverability through e-card banner integration, visible to 10,000+ monthly users.</li>
+                                <li>Configured Snowplow Analytics to track login and logout events for user behavior insights.</li>
+                            </ul>
+                            <div class="exp-footer">
+                                <p><strong>Tools:</strong> Xcode, Git, Interface Builder, Bitbucket, Jira</p>
+                                <p><strong>Core Strengths:</strong> UIKit, RxSwift, MVVM, REST API Integration, Deep Linking</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eduskills -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">
+                        <span class="timeline-date-text">Apr 2024 – Jun 2024</span>
+                        <div class="timeline-marker"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="exp-card-header">
+                            <div class="exp-header-left">
+                                <h3 class="exp-role">Android App Developer</h3>
+                                <p class="exp-company"><i class="fas fa-building"></i> Eduskills (Remote)</p>
+                            </div>
+                        </div>
+                        <div class="exp-card-body">
+                            <ul class="exp-points">
+                                <li>Implemented Firebase Debugging, reducing application faults by 30%.</li>
+                                <li>Improved app load time by 15% with background process and layout optimization.</li>
+                                <li>Enabled cross-platform authentication across Android, iOS, and Web using Firebase.</li>
+                                <li>Developed 10+ reusable UI components, responsive across devices.</li>
+                                <li>Increased development velocity by 20% with Agile workflows and sprint planning.</li>
+                                <li>Performed unit testing, improving code stability by 25%.</li>
+                            </ul>
+                            <div class="exp-footer">
+                                <p><strong>Tools:</strong> Android Studio, Firebase, Git</p>
+                                <p><strong>Core Strengths:</strong> Firebase Integration, Agile Development, Unit Testing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Techspeak -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">
+                        <span class="timeline-date-text">Aug 2023 – Sep 2023</span>
+                        <div class="timeline-marker"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="exp-card-header">
+                            <div class="exp-header-left">
+                                <h3 class="exp-role">Front End Developer Intern</h3>
+                                <p class="exp-company"><i class="fas fa-building"></i> Techspeak IT Solutions (Remote)</p>
+                            </div>
+                        </div>
+                        <div class="exp-card-body">
+                            <ul class="exp-points">
+                                <li>Built responsive UI with HTML, CSS, JavaScript, and SQL Server, improving UX by 25%.</li>
+                                <li>Enhanced collaboration and productivity by 30% using Git and automated test reporting.</li>
+                            </ul>
+                            <div class="exp-footer">
+                                <p><strong>Tools:</strong> VS Code, Git, SQL Server</p>
+                                <p><strong>Core Strengths:</strong> Responsive Design, Version Control</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inscripts Solutions -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">
+                        <span class="timeline-date-text">Jul 2025 - Present</span>
+                        <div class="timeline-marker"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="exp-card-header">
+                            <div class="exp-header-left">
+                                <h3 class="exp-role">iOS Developer</h3>
+                                <p class="exp-company"><i class="fas fa-building"></i> Inscripts Solutions, Chembur</p>
+                            </div>
+                        </div>
+                        <div class="exp-card-body">
+                            <ul class="exp-points">
+                                <li>Developed a WhatsApp clone chat app using CometChat iOS SDK (v4.x) and SwiftUI, implementing end-to-end messaging workflows.</li>
+                                <li>Integrated CometChat UI Kit and customized chat UI to match WhatsApp-style UX (tabs, chat list, chat screen).</li>
+                                <li>Implemented login/signup/logout using CometChat authentication APIs with secure session handling.</li>
+                                <li>Built conversation list (recent chats) module with refresh logic triggered by message events and navigation state.</li>
+                                <li>Implemented real-time message sync using CometChat listeners, including message send/receive, delivery updates, and history retrieval.</li>
+                                <li>Developed New Chat flow with bottom sheet UI, user fetching (CometChat.getUsers) and navigation into chat view.</li>
+                                <li>Implemented group chat creation and management using CometChat group APIs (create, add members, join/leave).</li>
+                                <li>Resolved complex UI/UX bugs including constraint warnings, navigation loops, and message send UI freeze scenarios.</li>
+                                <li>Collaborated cross-functionally to address high-priority customer issues and deliver production-ready fixes.</li>
+                            </ul>
+                            <div class="exp-footer">
+                                <p><strong>Technologies:</strong> Swift, SwiftUI, UIKit, CocoaPods, Swift Package Manager (SPM)</p>
+                                <p><strong>SDKs:</strong> CometChat iOS SDK v4, CometChat UI Kit, CometChat Calls SDK</p>
+                                <p><strong>Core Areas:</strong> Real-time chat, conversation management, group chat, navigation architecture, UI customization, debugging, API integration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <p class="section-subtitle">My Work</p>
+                <h2 class="section-heading">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- MCP Server - AI Agent Integration Platform -->
+                <div class="project-card featured" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-robot"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">AI/Developer Tools</span>
+                        <h3 class="project-title">MCP Server - AI Agent Platform</h3>
+                        <p class="project-description">
+                            Built a custom Model Context Protocol (MCP) server enabling AI agents to interact with local development environments through JSON-RPC 2.0 interface. Features 13 extensible tools for file operations, shell commands, and git integration.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Swift</span>
+                            <span>JSON-RPC 2.0</span>
+                            <span>MCP Protocol</span>
+                            <span>IPC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- StreamFlix App -->
+                <div class="project-card featured" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-film"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">iOS App</span>
+                        <h3 class="project-title">StreamFlix</h3>
+                        <p class="project-description">
+                            A Netflix-inspired streaming app built with Swift and SwiftUI. Features include movie browsing, 
+                            search functionality, user authentication, and seamless video playback with custom player controls.
+                        </p>
+                        <div class="project-tech">
+                            <span>Swift</span>
+                            <span>SwiftUI</span>
+                            <span>MVVM</span>
+                            <span>REST API</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Airbnb Clone -->
+                <div class="project-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-home"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">iOS App</span>
+                        <h3 class="project-title">Airbnb Clone</h3>
+                        <p class="project-description">
+                            Full-featured Airbnb clone with property listings, map integration, booking system, 
+                            and user reviews. Implements clean architecture with MVVM pattern and Core Data persistence.
+                        </p>
+                        <div class="project-tech">
+                            <span>Swift</span>
+                            <span>UIKit</span>
+                            <span>MapKit</span>
+                            <span>Core Data</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spring Festival App -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-calendar-alt"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">iOS App</span>
+                        <h3 class="project-title">Spring Festival App</h3>
+                        <p class="project-description">
+                            Event management app for college festivals featuring schedule management, 
+                            event registration, push notifications, and real-time updates.
+                        </p>
+                        <div class="project-tech">
+                            <span>Swift</span>
+                            <span>SwiftUI</span>
+                            <span>Firebase</span>
+                            <span>Push Notifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Candy Crush Game -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Game</span>
+                        <h3 class="project-title">Candy Match Game</h3>
+                        <p class="project-description">
+                            Addictive match-3 puzzle game inspired by Candy Crush. Features smooth animations, 
+                            level progression, power-ups, and leaderboard integration.
+                        </p>
+                        <div class="project-tech">
+                            <span>Swift</span>
+                            <span>SpriteKit</span>
+                            <span>GameKit</span>
+                            <span>Core Animation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Yoga Trainer -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Android App</span>
+                        <h3 class="project-title">AI Yoga Trainer</h3>
+                        <p class="project-description">
+                            Real-time posture correction using CNN and pose estimation with <span class="metric">90%+ accuracy</span>. 
+                            Reduced incorrect posture time by 45% with visual/audio feedback.
+                        </p>
+                        <div class="project-tech">
+                            <span>Android</span>
+                            <span>Java</span>
+                            <span>MediaPipe</span>
+                            <span>Firebase</span>
+                            <span>ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant Website -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-utensils"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Web App</span>
+                        <h3 class="project-title">Restaurant Website</h3>
+                        <p class="project-description">
+                            Full-stack restaurant website with automated reservations reducing manual effort by 60%. 
+                            Boosted mobile traffic by 50% with responsive design.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transaction Management -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-university"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Desktop App</span>
+                        <h3 class="project-title">Banking Transaction GUI</h3>
+                        <p class="project-description">
+                            Banking GUI for deposits, withdrawals, balance checks, and account setup. 
+                            Applied OOP principles with MySQL for secure data storage.
+                        </p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Eclipse</span>
+                            <span>MySQL</span>
+                            <span>OOP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <p class="section-subtitle">What I Know</p>
+                <h2 class="section-heading">Technical Skills</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-swift"></i>
+                            <span>Swift</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-copyright"></i>
+                            <span>C/C++</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Frameworks & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-apple"></i>
+                            <span>UIKit</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-apple"></i>
+                            <span>SwiftUI</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-android"></i>
+                            <span>Android SDK</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-fire"></i>
+                            <span>Firebase</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Architecture & Practices</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MVVM</span>
+                        <span class="skill-tag">MVC</span>
+                        <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">Unit Testing</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                        <span class="skill-tag">RxSwift</span>
+                        <span class="skill-tag">Combine</span>
+                        <span class="skill-tag">Core Data</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Analytics & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Snowplow</span>
+                        <span class="skill-tag">Firebase Analytics</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Bitbucket</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Debugging</span>
+                        <span class="skill-tag">Competitive Programming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-title">
+                <p class="section-subtitle">My Background</p>
+                <h2 class="section-heading">Education</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card" data-aos="fade-up">
+                    <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="education-content">
+                        <h3>Bachelor of Technology</h3>
+                        <h4>Computer Science and Information Technology</h4>
+                        <p class="institution">Rajarambapu Institute of Technology, Rajaramnagar</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Sangli, Maharashtra</p>
+                        <p class="duration"><i class="fas fa-calendar"></i> Expected July 2025</p>
+                        <div class="grade">
+                            <span class="grade-label">CGPA</span>
+                            <span class="grade-value">9.13</span>
+                        </div>
+                        <div class="coursework">
+                            <span>Data Structures</span>
+                            <span>Operating System</span>
+                            <span>Database Management</span>
+                            <span>Software Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-icon"><i class="fas fa-award"></i></div>
+                    <div class="education-content">
+                        <h3>Diploma</h3>
+                        <h4>Civil Engineering</h4>
+                        <p class="institution">Walchand College of Engineering</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Sangli, Maharashtra</p>
+                        <p class="duration"><i class="fas fa-calendar"></i> June 2022</p>
+                        <div class="grade">
+                            <span class="grade-label">Percentage</span>
+                            <span class="grade-value">89.53%</span>
+                        </div>
+                        <div class="coursework">
+                            <span>CAD</span>
+                            <span>Hydraulics</span>
+                            <span>Construction Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-title">
+                <p class="section-subtitle">Achievements</p>
+                <h2 class="section-heading">Certifications</h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card" data-aos="zoom-in">
+                    <div class="cert-icon"><i class="fab fa-android"></i></div>
+                    <h3>Android Developer Virtual Internship</h3>
+                    <p>Eduskills</p>
+                </div>
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="cert-icon"><i class="fab fa-java"></i></div>
+                    <h3>Java from Beginner to Expert</h3>
+                    <p>Infosys Springboard</p>
+                </div>
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="cert-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Techspeak</p>
+                </div>
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="cert-icon"><i class="fab fa-apple"></i></div>
+                    <h3>iOS Development</h3>
+                    <p>MediBuddy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <p class="section-subtitle">Let's Connect</p>
+                <h2 class="section-heading">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-text" data-aos="fade-up">
+                    <h3>Let's Work Together!</h3>
+                    <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                </div>
+                <div class="contact-cards" data-aos="fade-up" data-aos-delay="100">
+                    <a href="mailto:aryakulkarni33@gmail.com" class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>aryakulkarni33@gmail.com</p>
+                    </a>
+                    <a href="tel:+918080243329" class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                        <h4>Phone</h4>
+                        <p>+91-8080243329</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aarya-kulkarni-88593b275" target="_blank" class="contact-card">
+                        <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <h4>LinkedIn</h4>
+                        <p>Connect with me</p>
+                    </a>
+                </div>
+                <div class="contact-cta" data-aos="fade-up" data-aos-delay="200">
+                    <a href="mailto:aryakulkarni33@gmail.com" class="btn btn-primary btn-large">
+                        <span>Say Hello</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="mailto:aryakulkarni33@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+918080243329" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                <a href="https://www.linkedin.com/in/aarya-kulkarni-88593b275" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/aryakulkarni" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="footer-text">Designed & Built by <span>Arya Kulkarni</span></p>
+            <p class="footer-copyright">© 2025 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
