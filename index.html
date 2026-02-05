@@ -24,6 +24,19 @@
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
+    <!-- Certificate Lightbox Modal -->
+    <div class="cert-lightbox" id="certLightbox">
+        <div class="cert-lightbox-overlay"></div>
+        <div class="cert-lightbox-content">
+            <button class="cert-lightbox-close" id="certLightboxClose">&times;</button>
+            <button class="cert-lightbox-nav cert-lightbox-prev" id="certLightboxPrev"><i class="fas fa-chevron-left"></i></button>
+            <button class="cert-lightbox-nav cert-lightbox-next" id="certLightboxNext"><i class="fas fa-chevron-right"></i></button>
+            <img src="" alt="Certificate" id="certLightboxImg">
+            <p class="cert-lightbox-caption" id="certLightboxCaption"></p>
+            <div class="cert-lightbox-dots" id="certLightboxDots"></div>
+        </div>
+    </div>
+
     <!-- Resume Modal -->
     <div class="resume-modal" id="resumeModal">
         <div class="resume-modal-content">
@@ -187,7 +200,7 @@
                         <span>View My Work</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#" class="btn btn-secondary" id="resumeBtn">
+                    <a href="Arya_Kulkarni_Resume.pdf" target="_blank" class="btn btn-secondary">
                         <span>View Resume</span>
                         <i class="fas fa-file-pdf"></i>
                     </a>
@@ -244,17 +257,17 @@
                 </div>
                 <div class="about-text">
                     <p class="about-description">
-                        I'm an <span class="highlight">aspiring iOS developer</span> with hands-on internship experience at 
-                        <span class="highlight">MediBuddy</span>, where I contributed to building scalable mobile features 
+                        I'm an <span class="highlight">aspiring iOS developer</span> with hands-on internship experience at
+                        <span class="highlight">MediBuddy</span>, where I contributed to building scalable mobile features
                         using <span class="highlight">Swift, UIKit, RxSwift, and Firebase</span>.
                     </p>
                     <p class="about-description">
-                        Proficient in <span class="highlight">MVVM architecture</span>, REST API integration, and agile 
-                        development practices. Also experienced in Android and web development, with a passion for 
+                        Proficient in <span class="highlight">MVVM architecture</span>, REST API integration, and agile
+                        development practices. Also experienced in Android and web development, with a passion for
                         creating optimized, user-first applications.
                     </p>
                     <p class="about-description">
-                        Currently pursuing <span class="highlight">B.Tech in Computer Science</span> at Rajarambapu 
+                        Currently pursuing <span class="highlight">B.Tech in Computer Science</span> at Rajarambapu
                         Institute of Technology with a CGPA of <span class="highlight">9.13</span>.
                     </p>
                     <div class="about-stats">
@@ -416,6 +429,124 @@
             </div>
         </div>
     </section>
+
+    <!-- Milestones Section -->
+    <section id="milestones" class="milestones">
+        <div class="container">
+            <div class="section-title">
+                <p class="section-subtitle">Achievements</p>
+                <h2 class="section-heading">Milestones</h2>
+            </div>
+            
+            <div class="milestone-card" data-aos="fade-up" data-aos-duration="800">
+                <div class="milestone-badge">
+                    <i class="fas fa-trophy"></i>
+                    <span>2025</span>
+                </div>
+                
+                <div class="milestone-content">
+                    <div class="milestone-header" data-aos="fade-right" data-aos-delay="200">
+                        <h3 class="milestone-title">
+                            <i class="fas fa-star"></i>
+                            Internship Milestone Unlocked!
+                            <i class="fas fa-star"></i>
+                        </h3>
+                        <p class="milestone-subtitle">iOS Developer Internship at MediBuddy</p>
+                    </div>
+                    
+                    <div class="milestone-gallery" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="milestone-image-wrapper">
+                            <img src="milestone-certificate.jpeg" alt="Felicitation Ceremony" class="milestone-img">
+                            <div class="image-caption">Felicitated by Shri Jayant Patil, Former Finance Minister of Maharashtra</div>
+                        </div>
+                        <div class="milestone-image-wrapper">
+                            <img src="milestone-trophie.jpeg" alt="Placement Certificate" class="milestone-img">
+                            <div class="image-caption">Proudly Placed - AY 2024-25</div>
+                        </div>
+                    </div>
+                    
+                    <div class="milestone-description" data-aos="fade-up" data-aos-delay="600">
+                        <p>Completed my first-ever iOS Developer internship at <strong>MediBuddy</strong>, India's leading digital healthcare platform. Starting with a completely new language and ecosystem, this journey transformed me into a confident iOS developer.</p>
+                    </div>
+                    
+                    <div class="milestone-highlights" data-aos="fade-up" data-aos-delay="800">
+                        <div class="highlight-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Worked on real-time iOS features in a production-level app</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Collaborated with talented team to improve UX and performance</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Applied MVVM, Combine, and clean architecture professionally</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Learned scalable code, user-first design, and agile teamwork</span>
+                        </div>
+                    </div>
+                    
+                    <div class="milestone-quote" data-aos="fade-up" data-aos-delay="1000">
+                        <i class="fas fa-quote-left"></i>
+                        <p>This experience was more than just a technical deep-dive — it was about growing in a give-and-take culture where I learned, contributed, adapted, and evolved every day.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conference Milestone Card -->
+            <div class="milestone-card" data-aos="fade-up" data-aos-duration="800" style="margin-top: 2rem;">
+                <div class="milestone-badge">
+                    <i class="fas fa-award"></i>
+                    <span>2024</span>
+                </div>
+                
+                <div class="milestone-content">
+                    <div class="milestone-header" data-aos="fade-right" data-aos-delay="200">
+                        <h3 class="milestone-title">
+                            <i class="fas fa-star"></i>
+                            National Conference Presentation
+                            <i class="fas fa-star"></i>
+                        </h3>
+                        <p class="milestone-subtitle">10th National Conference - ETIET 2024</p>
+                    </div>
+                    
+                    <div class="milestone-gallery milestone-gallery-single" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="milestone-image-wrapper">
+                            <img src="conference.jpeg" alt="National Conference Presentation" class="milestone-img">
+                            <div class="image-caption">Paper Presentation at Bharati Vidyapeeth's College of Engineering, Kolhapur</div>
+                        </div>
+                    </div>
+                    
+                    <div class="milestone-description" data-aos="fade-up" data-aos-delay="600">
+                        <p>Presented and published our research paper on <strong>"A Detailed Review on AI Yoga Trainer and Corrector using Machine Learning"</strong> at the 10th National Conference on Emerging Trends in Engineering and Technology (ETIET).</p>
+                    </div>
+                    
+                    <div class="milestone-highlights milestone-highlights-compact" data-aos="fade-up" data-aos-delay="800">
+                        <div class="highlight-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Research paper published in conference proceedings</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>Live presentation to academic audience</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <span>AI/ML based yoga pose detection & correction</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-university"></i>
+                            <span>Bharati Vidyapeeth's College of Engineering, Kolhapur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
@@ -429,8 +560,8 @@
                     <div class="project-image">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/aryasantosh/MCPServer" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/aryasantosh/MCPServer" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <div class="project-icon"><i class="fas fa-robot"></i></div>
@@ -451,13 +582,40 @@
                     </div>
                 </div>
 
+                <!-- Portfolio Website -->
+                <div class="project-card featured" data-aos="fade-up" data-aos-delay="50">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/aryasantosh/portfolio" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/aryasantosh/portfolio" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-icon"><i class="fas fa-briefcase"></i></div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Web Development</span>
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            Modern, responsive portfolio website featuring animated timeline for work experience, interactive project cards, smooth scroll animations, and a clean UI/UX design with gradient accents.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>AOS</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- StreamFlix App -->
                 <div class="project-card featured" data-aos="fade-up">
                     <div class="project-image">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/aryasantosh/Streamflix" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/aryasantosh/Streamflix" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <div class="project-icon"><i class="fas fa-film"></i></div>
@@ -466,7 +624,7 @@
                         <span class="project-category">iOS App</span>
                         <h3 class="project-title">StreamFlix</h3>
                         <p class="project-description">
-                            A Netflix-inspired streaming app built with Swift and SwiftUI. Features include movie browsing, 
+                            A Netflix-inspired streaming app built with Swift and SwiftUI. Features include movie browsing,
                             search functionality, user authentication, and seamless video playback with custom player controls.
                         </p>
                         <div class="project-tech">
@@ -484,8 +642,8 @@
                     <div class="project-image">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/aryasantosh/AIrBnBCloneApp" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/aryasantosh/AIrBnBCloneApp" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <div class="project-icon"><i class="fas fa-home"></i></div>
@@ -494,7 +652,7 @@
                         <span class="project-category">iOS App</span>
                         <h3 class="project-title">Airbnb Clone</h3>
                         <p class="project-description">
-                            Full-featured Airbnb clone with property listings, map integration, booking system, 
+                            Full-featured Airbnb clone with property listings, map integration, booking system,
                             and user reviews. Implements clean architecture with MVVM pattern and Core Data persistence.
                         </p>
                         <div class="project-tech">
@@ -512,8 +670,8 @@
                     <div class="project-image">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/aryasantosh/Spring-Festival-Crush" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/aryasantosh/Spring-Festival-Crush" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <div class="project-icon"><i class="fas fa-calendar-alt"></i></div>
@@ -522,7 +680,7 @@
                         <span class="project-category">iOS App</span>
                         <h3 class="project-title">Spring Festival App</h3>
                         <p class="project-description">
-                            Event management app for college festivals featuring schedule management, 
+                            Event management app for college festivals featuring schedule management,
                             event registration, push notifications, and real-time updates.
                         </p>
                         <div class="project-tech">
@@ -534,28 +692,27 @@
                     </div>
                 </div>
 
-                <!-- Candy Crush Game -->
+                <!-- Number Find Game -->
                 <div class="project-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="project-image">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/aryasantosh/test_FindNumberGame-main" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/aryasantosh/test_FindNumberGame-main" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <div class="project-icon"><i class="fas fa-gamepad"></i></div>
                     </div>
                     <div class="project-content">
                         <span class="project-category">Game</span>
-                        <h3 class="project-title">Candy Match Game</h3>
+                        <h3 class="project-title">Number Find Game</h3>
                         <p class="project-description">
-                            Addictive match-3 puzzle game inspired by Candy Crush. Features smooth animations, 
-                            level progression, power-ups, and leaderboard integration.
+                            Fun number finding puzzle game with timed challenges, score tracking,
+                            and multiple difficulty levels. Test your speed and observation skills!
                         </p>
                         <div class="project-tech">
                             <span>Swift</span>
-                            <span>SpriteKit</span>
-                            <span>GameKit</span>
+                            <span>UIKit</span>
                             <span>Core Animation</span>
                         </div>
                     </div>
@@ -576,7 +733,7 @@
                         <span class="project-category">Android App</span>
                         <h3 class="project-title">AI Yoga Trainer</h3>
                         <p class="project-description">
-                            Real-time posture correction using CNN and pose estimation with <span class="metric">90%+ accuracy</span>. 
+                            Real-time posture correction using CNN and pose estimation with <span class="metric">90%+ accuracy</span>.
                             Reduced incorrect posture time by 45% with visual/audio feedback.
                         </p>
                         <div class="project-tech">
@@ -604,7 +761,7 @@
                         <span class="project-category">Web App</span>
                         <h3 class="project-title">Restaurant Website</h3>
                         <p class="project-description">
-                            Full-stack restaurant website with automated reservations reducing manual effort by 60%. 
+                            Full-stack restaurant website with automated reservations reducing manual effort by 60%.
                             Boosted mobile traffic by 50% with responsive design.
                         </p>
                         <div class="project-tech">
@@ -632,7 +789,7 @@
                         <span class="project-category">Desktop App</span>
                         <h3 class="project-title">Banking Transaction GUI</h3>
                         <p class="project-description">
-                            Banking GUI for deposits, withdrawals, balance checks, and account setup. 
+                            Banking GUI for deposits, withdrawals, balance checks, and account setup.
                             Applied OOP principles with MySQL for secure data storage.
                         </p>
                         <div class="project-tech">
@@ -811,25 +968,35 @@
                 <h2 class="section-heading">Certifications</h2>
             </div>
             <div class="cert-grid">
-                <div class="cert-card" data-aos="zoom-in">
+                <div class="cert-card cert-clickable" data-aos="zoom-in" data-cert-img="android_Developer.jpeg" data-cert-title="Android Developer Virtual Internship - Eduskills">
                     <div class="cert-icon"><i class="fab fa-android"></i></div>
                     <h3>Android Developer Virtual Internship</h3>
                     <p>Eduskills</p>
+                    <span class="cert-view-hint"><i class="fas fa-eye"></i></span>
                 </div>
-                <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="cert-card cert-clickable" data-aos="zoom-in" data-aos-delay="100" data-cert-img="java.jpeg" data-cert-title="Java from Beginner to Expert - Infosys Springboard">
                     <div class="cert-icon"><i class="fab fa-java"></i></div>
                     <h3>Java from Beginner to Expert</h3>
                     <p>Infosys Springboard</p>
+                    <span class="cert-view-hint"><i class="fas fa-eye"></i></span>
                 </div>
-                <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="cert-card cert-clickable" data-aos="zoom-in" data-aos-delay="200" data-cert-img="techspeak.jpeg" data-cert-title="Web Development - Techspeak">
                     <div class="cert-icon"><i class="fas fa-globe"></i></div>
                     <h3>Web Development</h3>
                     <p>Techspeak</p>
+                    <span class="cert-view-hint"><i class="fas fa-eye"></i></span>
                 </div>
-                <div class="cert-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="cert-icon"><i class="fab fa-apple"></i></div>
-                    <h3>iOS Development</h3>
-                    <p>MediBuddy</p>
+                <div class="cert-card cert-clickable" data-aos="zoom-in" data-aos-delay="300" data-cert-img="cybersecurity.jpeg" data-cert-title="Cyber Security Certificate">
+                    <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Cyber Security</h3>
+                    <p>Certificate</p>
+                    <span class="cert-view-hint"><i class="fas fa-eye"></i></span>
+                </div>
+                <div class="cert-card cert-clickable cert-multi" data-aos="zoom-in" data-aos-delay="400" data-cert-imgs="aws1.jpeg,aws2.jpeg" data-cert-titles="AWS Cloud Practitioner Badge,AWS Cloud Practitioner Certificate">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h3>AWS Cloud Practitioner</h3>
+                    <p>Amazon Web Services</p>
+                    <span class="cert-view-hint"><i class="fas fa-eye"></i></span>
                 </div>
             </div>
         </div>

@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "local-fs": {
+      "command": "python3",
+      "args": ["/Users/admin/Desktop/projects sample/MCP/mcp-server/server.py"],
+      "disabled": false,
+      "autoApprove": [
+        "read_file",
+        "list_directory", 
+        "search_files",
+        "get_file_info",
+        "git_status",
+        "git_log",
+        "analyze_project"
+      ]
+    }
+  }
+}
